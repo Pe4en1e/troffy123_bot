@@ -189,10 +189,14 @@ message.channel.send(temp)
     }
 });
 
-
-
 client.on('message', message => {
   if(message.content === 'троффи пошел нахуй') {
     message.channel.send('Ты', {files: ["./images/serega-pirat-dota2.gif"]})
+  }
+});
+
+client.on('message', message => {
+  if(message.content === prefix + 'testAutoPlay') {
+    message.channel.send(prefix + 'play https://www.youtube.com/watch?v=UskR01pWLHw')
   }
 });
