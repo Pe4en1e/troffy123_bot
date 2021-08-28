@@ -193,6 +193,6 @@ message.channel.send(temp)
 
 client.on('message', message => {
   if(message.content === 'троффи пошел нахуй') {
-    message.channel.send('https://media.tenor.co/videos/28b36eabaa455f215ce5073324f78f56/mp4')
+    message.channel.send('Ты', {files: ["./images/serega-pirat-dota2.gif"]})
   }
 });
