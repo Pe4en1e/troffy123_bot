@@ -10,7 +10,7 @@ const { TOKEN, PREFIX } = require("./util/EvobotUtil");
 const i18n = require("i18n");
 let maincolor = '#884bb5'
 let prefix = '>'
-let greenpieceId = 383887543986552833
+let greenpieceId = '383887543986552833'
 
 
 const client = new Client({
