@@ -205,7 +205,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === 'Негры' && message.content === 'негры' && message.content === 'Niggers' && message.content === 'niggers' && message.content === 'негретята' && message.author.id === greenpieceId) {
+  if(message.content === 'негры' && message.author.id === greenpieceId) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
     message.reply('убить негров');
