@@ -212,3 +212,48 @@ client.on('message', message => {
     message.reply('уыуыыыыы негры сукааа')
   }
 });
+
+client.on('message', message => {
+  if(message.content === 'Негры' && message.author.id === greenpieceId) {
+    message.reply('аааа ыыыы негры негры негры');
+    message.reply('ыыыы ааа тупые негры');
+    message.reply('убить негров');
+    message.reply('уыуыыыыы негры сукааа')
+  }
+});
+
+client.on('message', message => {
+  if(message.content === 'Niggers' && message.author.id === greenpieceId) {
+    message.reply('аааа ыыыы негры негры негры');
+    message.reply('ыыыы ааа тупые негры');
+    message.reply('убить негров');
+    message.reply('уыуыыыыы негры сукааа')
+  }
+});
+
+client.on('message', message => {
+  if(message.content === 'niggers' && message.author.id === greenpieceId) {
+    message.reply('аааа ыыыы негры негры негры');
+    message.reply('ыыыы ааа тупые негры');
+    message.reply('убить негров');
+    message.reply('уыуыыыыы негры сукааа')
+  }
+});
+
+client.on('message', message => {
+  if(message.content === 'негритята' && message.author.id === greenpieceId) {
+    message.reply('аааа ыыыы негры негры негры');
+    message.reply('ыыыы ааа тупые негры');
+    message.reply('убить негров');
+    message.reply('уыуыыыыы негры сукааа')
+  }
+});
+
+client.on('message', message => {
+  if(message.content === 'Негритята' && message.author.id === greenpieceId) {
+    message.reply('аааа ыыыы негры негры негры');
+    message.reply('ыыыы ааа тупые негры');
+    message.reply('убить негров');
+    message.reply('уыуыыыыы негры сукааа')
+  }
+});
