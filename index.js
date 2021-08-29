@@ -217,7 +217,7 @@ client.on('message', message => {
   if(message.content.startsWith('Негры' && message.content === 'негры' && message.content === 'Niggers' && message.content === 'niggers' && message.content === 'негретята' && message.author.id === greenpieceId)) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
-    message.reply('убить негров')
+    message.reply('убить негров');
     message.reply('уыуыыыыы негры сукааа')
   }
 });
@@ -227,7 +227,7 @@ client.on('message', message => {
   if(message.content.endsWith('Негры' && message.content === 'негры' && message.content === 'Niggers' && message.content === 'niggers' && message.content === 'негретята' && message.author.id === greenpieceId)) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
-    message.reply('убить негров')
+    message.reply('убить негров');
     message.reply('уыуыыыыы негры сукааа')
   }
 });
