@@ -10,6 +10,7 @@ const { TOKEN, PREFIX } = require("./util/EvobotUtil");
 const i18n = require("i18n");
 let maincolor = '#884bb5'
 let prefix = '>'
+let greenpieceId = 383887543986552833
 
 
 const client = new Client({
@@ -200,5 +201,13 @@ client.on('message', message => {
     message.channel.send('салат. https://youtu.be/b4UdVHRXpsc');
     message.react('🍜');
     message.react('🥗')
+  }
+});
+
+client.on('message', message => {
+  if(message.author.id === greenpieceId && message.content === 'Негры') {
+    message.reply('аааа ыыыы негры негры негры');
+    message.reply('ыыыы ааа тупые негры');
+    message.reply('уыуыыыыы негры сукааа')
   }
 });
