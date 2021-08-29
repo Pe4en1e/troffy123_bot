@@ -196,7 +196,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === prefix + 'testAutoPlay') {
-    message.channel.send(prefix + 'play https://www.youtube.com/watch?v=UskR01pWLHw')
+  if(message.content === 'Суп') {
+    message.channel.send('салат. Напиши ' + prefix + 'play https://youtu.be/b4UdVHRXpsc')
   }
 });
