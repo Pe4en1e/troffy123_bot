@@ -10,8 +10,8 @@ const { TOKEN, PREFIX } = require("./util/EvobotUtil");
 const i18n = require("i18n");
 let maincolor = '#884bb5'
 let prefix = '>'
-let greenpieceId = '383887543986552833'
-
+// let greenpieceId = '383887543986552833'
+let greenpieceId = '429387453586079752'
 
 const client = new Client({
   disableMentions: "everyone",
@@ -205,7 +205,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === 'негры' && message.author.id === greenpieceId) {
+  if(message.content.includes('негры') && message.author.id === greenpieceId) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
     message.reply('убить негров');
@@ -214,7 +214,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === 'Негры' && message.author.id === greenpieceId) {
+  if(message.content.includes('Негры') && message.author.id === greenpieceId) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
     message.reply('убить негров');
@@ -223,7 +223,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === 'Niggers' && message.author.id === greenpieceId) {
+  if(message.content.includes('Niggers') && message.author.id === greenpieceId) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
     message.reply('убить негров');
@@ -232,7 +232,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === 'niggers' && message.author.id === greenpieceId) {
+  if(message.content.includes('niggers') && message.author.id === greenpieceId) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
     message.reply('убить негров');
@@ -241,7 +241,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === 'негритята' && message.author.id === greenpieceId) {
+  if(message.content.includes('негритята') && message.author.id === greenpieceId) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
     message.reply('убить негров');
@@ -250,7 +250,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if(message.content === 'Негритята' && message.author.id === greenpieceId) {
+  if(message.content.includes('Негритята') && message.author.id === greenpieceId) {
     message.reply('аааа ыыыы негры негры негры');
     message.reply('ыыыы ааа тупые негры');
     message.reply('убить негров');
