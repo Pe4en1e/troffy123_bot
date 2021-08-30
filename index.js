@@ -257,3 +257,9 @@ client.on('message', message => {
     message.reply('уыуыыыыы негры сукааа')
   }
 });
+
+client.on('message', message => {
+  if(message.content.includes('проверка')) {
+    message.reply('Я нашел!')
+  }
+});
