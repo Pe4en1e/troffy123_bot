@@ -257,3 +257,13 @@ client.on('message', message => {
     message.reply('уыуыыыыы негры сукааа')
   }
 });
+
+var nword =['Негры', 'негры', 'Niggers', 'Nigger', 'niggers', 'nigger', 'Негритята', 'негритята'];
+client.on('message', msg => {
+  if(message.content.startsWith(nword)) {
+    message.reply('аааа ыыыы негры негры негры');
+    message.reply('ыыыы ааа тупые негры');
+    message.reply('убить негров');
+    message.reply('уыуыыыыы негры сукааа')
+  }
+})
