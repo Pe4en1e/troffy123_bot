@@ -259,8 +259,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if(message.content === 'хочу быть мужиком') {
-    let muzhhik = message.guild.roles.find(role => role.id == "694283321307431005");
-    member.addRole(muzhhik);
+    GuildMemberRoleManager.set(['694283321307431005']);
     message.reply('Ты теперь мужик')
   }
 })
