@@ -8,6 +8,7 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { TOKEN, PREFIX } = require("./util/EvobotUtil");
 const i18n = require("i18n");
+const { time } = require("console");
 let maincolor = '#884bb5'
 let prefix = '>'
 let greenpieceId = '383887543986552833'
@@ -257,4 +258,45 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  var timer = new Date().getHours();
+  if(timer = 19) {
+    client.channels.cache.get('694326993247797319').send('До сентября 5 часов')
+  }
+})
+
+client.on('message', message => {
+  var timer = new Date().getHours();
+  if(timer = 20) {
+    client.channels.cache.get('694326993247797319').send('До сентября 4 часа')
+  }
+})
+
+client.on('message', message => {
+  var timer = new Date().getHours();
+  if(timer = 21) {
+    client.channels.cache.get('694326993247797319').send('До сентября 3 часа')
+  }
+})
+
+client.on('message', message => {
+  var timer = new Date().getHours();
+  if(timer = 22) {
+    client.channels.cache.get('694326993247797319').send('До сентября 2 часа')
+  }
+})
+
+client.on('message', message => {
+  var timer = new Date().getHours();
+  if(timer = 23) {
+    client.channels.cache.get('694326993247797319').send('Сентябрь через час!')
+  }
+})
+
+client.on('message', message => {
+  var timer = new Date().getHours();
+  if(timer = 0) {
+    client.channels.cache.get('694326993247797319').send('@everyone лето проебано!')
+  }
+})
 
