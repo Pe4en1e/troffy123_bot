@@ -300,3 +300,6 @@ client.on('message', message => {
   }
 })
 
+client.on('ready', () => {
+  client.channels.cache.get('694326993247797319').send('троффи пришел отравлять жизнь')
+})
