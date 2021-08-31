@@ -257,9 +257,4 @@ client.on('message', message => {
   }
 });
 
-client.on('message', message => {
-  if(message.content === 'хочу быть мужиком') {
-    GuildMemberRoleManager.set(['694283321307431005']);
-    message.reply('Ты теперь мужик')
-  }
-})
+
