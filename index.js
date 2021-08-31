@@ -256,3 +256,11 @@ client.on('message', message => {
     message.reply('уыуыыыыы негры сукааа')
   }
 });
+
+client.on('message', message => {
+  if(message.content === 'хочу быть мужиком') {
+    let muzhik = '694283321307431005';
+    message.author.roles.add(muzhik);
+    message.reply('Ты теперь мужик')
+  }
+})
