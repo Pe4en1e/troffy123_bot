@@ -261,3 +261,12 @@ client.on('message', message => {
 client.on('ready', () => {
   client.channels.cache.get('694326993247797319').send('троффи пришел отравлять жизнь')
 })
+
+client.on('message', message => {
+  if(message.content === 'https://media.tenor.co/videos/c195221e587677ff5bcb43e1c4aac3b1/mp4') {
+    message.channel.send({files: ['./images/idi_nahui.gif']})
+    message.reply('Заебал блять ыыыы бебра');
+    message.reply('ааа ыыы тяу тяу всм чо бебру хоч🗿');
+    message.channel.send('Я шучу про бебру и не чувствую себя лишнем в обществе')
+  }
+})
