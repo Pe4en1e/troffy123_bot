@@ -270,3 +270,10 @@ client.on('message', message => {
     message.channel.send('Я шучу про бебру и не чувствую себя лишнем в обществе')
   }
 })
+
+client.on('message', message => {
+  if(message.content === 'хочу лого дурки') {
+    let logo = (message.guild.icon.link);
+    message.channel.send
+  }
+})
