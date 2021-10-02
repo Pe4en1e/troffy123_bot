@@ -263,11 +263,11 @@ client.on('ready', () => {
 })
 
 client.on('message', message => {
-  if(message.content === 'https://media.tenor.co/videos/c195221e587677ff5bcb43e1c4aac3b1/mp4') {
+  if(message.content === 'https://tenor.com/view/%D0%B1%D0%B5%D0%B1%D1%80%D0%B0-bebra-%D0%BE%D1%81%D1%82%D1%80%D1%8B%D0%B5%D0%BA%D0%BE%D0%B7%D1%8B%D1%80%D1%8C%D0%BA%D0%B8-gif-22813818') {
     message.channel.send({files: ['./images/idi_nahui.gif']})
     message.reply('Заебал блять ыыыы бебра');
     message.reply('ааа ыыы тяу тяу всм чо бебру хоч🗿');
-    message.channel.send('Я шучу про бебру и не чувствую себя лишнем в обществе')
+    message.channel.send('Я шучу про бебру и не чувствую себя лишним в обществе')
   }
 })
 
