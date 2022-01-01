@@ -61,9 +61,6 @@ client.on("ready", () => {
   console.log('Bot enabled!')
 })
 
-
-client.user.setPresence({status: 'idle'});
-
 /**
  * Import all commands
  */
@@ -261,8 +258,19 @@ client.on('message', message => {
 });
 
 client.on('ready', () => {
-  client.channels.cache.get('694326993247797319').send('троффи пришел отравлять жизнь')
+  client.channels.cache.get('694326993247797319').send('размуть заебал че за кринж че мы сделали')
 })
+
+
+client.on('message', message => {    // &yn (randomaizer)
+  if (message.author.id === '297951251566428160') {
+      var unmute = ["размуть че мы сделали то",
+      "ты даже причину не объяснил",
+      "просто кикнул потому что хочешь"]
+              var temp = unmute [Math.floor(Math.random() * 3)]
+message.reply(unmute)
+    }
+});
 
 client.on('message', message => {
   if(message.content === 'https://tenor.com/view/%D0%B1%D0%B5%D0%B1%D1%80%D0%B0-bebra-%D0%BE%D1%81%D1%82%D1%80%D1%8B%D0%B5%D0%BA%D0%BE%D0%B7%D1%8B%D1%80%D1%8C%D0%BA%D0%B8-gif-22813818') {
