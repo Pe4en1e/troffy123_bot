@@ -62,6 +62,8 @@ client.on("ready", () => {
 })
 
 
+client.user.setPresence({status: 'idle'});
+
 /**
  * Import all commands
  */
