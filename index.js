@@ -9,6 +9,7 @@ const { join } = require("path");
 const { TOKEN, PREFIX } = require("./util/EvobotUtil");
 const i18n = require("i18n");
 const { time } = require("console");
+const { channel } = require("diagnostics_channel");
 let maincolor = '#884bb5'
 let prefix = '>'
 let greenpieceId = '383887543986552833'
@@ -278,3 +279,9 @@ client.on('message', message => {
     message.channel.send
   }
 })
+
+client.on('message', message => {
+  if(message.channel.id === '480025455269904385') {
+    message.channel.delete();
+  }
+});
