@@ -281,7 +281,7 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-  if(message.channel.id === '480025455269904385') {
+  if(message.channel.id === '694326993247797319') {
     message.channel.delete();
   }
 });
