@@ -259,7 +259,7 @@ client.on('message', message => {
 });
 
 client.on('ready', () => {
-  client.channels.cache.get('694326993247797319').send('троффи пришел отравлять жизнь')
+  client.channels.cache.get('694335651700670524').send('троффи пришел отравлять жизнь')
 })
 
 
@@ -281,7 +281,7 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-  if(message.channel.id === '694326993247797319') {
+  if(message.channel.id === '694335651700670524') {
     message.channel.delete();
   }
 });
