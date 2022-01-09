@@ -290,7 +290,13 @@ client.on('message', message => {
 client.on('message', message => {
   if(message.content === 'Слава Украине') {
     message.react('🇺🇦');
-    message.reply('Героям слава!')
+    message.channel.send('Героям слава!')
+  }
+})
+
+client.on('message', message => {
+  if(message.content === 'Слава нации!') {
+    message.channel.send('Смерть врагам!')
   }
 })
 
