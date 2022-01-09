@@ -274,15 +274,15 @@ client.on('message', message => {
 })
 
 
-client.on('message', function(message) {
-  if(message.author.id === '917872081100742686') {
-    let testRole = message.guild.roles.cache.get('929332149524525117')
-      if(message.member.roles.cache.has(testRole)) {
-        console.log('Role already given!')
-      }
-
-      else {
-        console.log('Role not found')
-      }
+client.on('message', message => {
+  if(message.author.id === '159985870458322944' && message.content.includes(' твой уровень ')) {
+    message.reply('всем похуй');
+    message.react(':regional_indicator_f:');
+    message.react(':regional_indicator_u:');
+    message.react(':regional_indicator_c:');
+    message.react(':regional_indicator_k:');
+    message.react('🔥');
+    message.react(':regional_indicator_m:');
+    message.react(':regional_indicator_e:');
   }
 })
