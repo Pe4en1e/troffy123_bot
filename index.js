@@ -274,7 +274,15 @@ client.on('message', message => {
 })
 
 
-client.on('guildMemberAdd', async (member) => {
-  const role = member.guild.roles.cache.get("929332149524525117")
-  await member.roles.add(role)
-});
+client.on('message', function(message) {
+  if(message.author.id === '') {
+    let testRole = message.guild.roles.cache.get('')
+      if(message.member.roles.cache.has(testRole)) {
+        console.log('Role already given!')
+      }
+
+      else {
+        console.log('Role not found')
+      }
+  }
+})
