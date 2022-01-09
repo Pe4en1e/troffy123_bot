@@ -276,13 +276,6 @@ client.on('message', message => {
 
 client.on('message', message => {
   if(message.author.id === '159985870458322944' && message.content.includes(' твой уровень ')) {
-    message.reply('всем похуй');
-    message.react('F');
-    message.react('U');
-    message.react('C');
-    message.react('K');
-    message.react('🔥');
-    message.react('M');
-    message.react('E');
+    message.reply('всем похуй')
   }
 })
