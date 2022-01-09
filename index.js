@@ -275,8 +275,8 @@ client.on('message', message => {
 
 
 client.on('message', function(message) {
-  if(message.author.id === '') {
-    let testRole = message.guild.roles.cache.get('')
+  if(message.author.id === '917872081100742686') {
+    let testRole = message.guild.roles.cache.get('929332149524525117')
       if(message.member.roles.cache.has(testRole)) {
         console.log('Role already given!')
       }
