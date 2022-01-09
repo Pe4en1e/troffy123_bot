@@ -260,7 +260,7 @@ client.on('message', message => {
 
 client.on('ready', () => {
   const botName = client.user.username
-  client.channels.cache.get('928036193638182972').send('🟢' + botName + 'enabled!')
+  client.channels.cache.get('928036193638182972').send('🟢 ' + botName + ' enabled!')
 })
 
 
