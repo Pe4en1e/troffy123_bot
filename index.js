@@ -277,12 +277,12 @@ client.on('message', message => {
 client.on('message', message => {
   if(message.author.id === '159985870458322944' && message.content.includes(' твой уровень ')) {
     message.reply('всем похуй');
-    message.react(':regional_indicator_f:');
-    message.react(':regional_indicator_u:');
-    message.react(':regional_indicator_c:');
-    message.react(':regional_indicator_k:');
+    message.react('F');
+    message.react('U');
+    message.react('C');
+    message.react('K');
     message.react('🔥');
-    message.react(':regional_indicator_m:');
-    message.react(':regional_indicator_e:');
+    message.react('M');
+    message.react('E');
   }
 })
