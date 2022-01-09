@@ -259,14 +259,10 @@ client.on('message', message => {
 });
 
 client.on('ready', () => {
-  client.channels.cache.get('694335651700670524').send('троффи пришел отравлять жизнь')
+  const botName = client.user.username
+  client.channels.cache.get('928036193638182972').send('🟢' + botName + 'enabled!')
 })
 
-client.on('message', message => {
-  if(message.channel.id === '694335651700670524') {
-    message.channel.delete();
-  }
-});
 
 client.on('message', message => {
   if(message.content === 'https://tenor.com/view/%D0%B1%D0%B5%D0%B1%D1%80%D0%B0-bebra-%D0%BE%D1%81%D1%82%D1%80%D1%8B%D0%B5%D0%BA%D0%BE%D0%B7%D1%8B%D1%80%D1%8C%D0%BA%D0%B8-gif-22813818') {
@@ -277,12 +273,6 @@ client.on('message', message => {
   }
 })
 
-client.on('message', message => {
-  if(message.content === 'хочу лого дурки') {
-    let logo = (message.guild.icon.link);
-    message.channel.send
-  }
-})
 
 client.on('guildMemberAdd', async (member) => {
   const role = member.guild.roles.cache.get("929332149524525117")
