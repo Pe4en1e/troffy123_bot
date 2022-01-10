@@ -59,7 +59,7 @@ i18n.configure({
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
 client.on("ready", () => {
-  console.log('Bot enabled!')
+  console.log(client.user.username + ' enabled!')
 })
 
 /**
